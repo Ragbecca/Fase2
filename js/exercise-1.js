@@ -4,30 +4,30 @@ const nameQuestion = document.getElementById("change-name");
 let boardType = -1;
 
 const musicTypeOne = document.getElementById("music-type-1");
-musicTypeOne.addEventListener("click", changeTypeOne);
+musicTypeOne.addEventListener("click", function () { changeType(0) });
 const musicTypeTwo = document.getElementById("music-type-2");
-musicTypeTwo.addEventListener("click", changeTypeTwo);
+musicTypeTwo.addEventListener("click", function () { changeType(1) });
 const musicTypeThree = document.getElementById("music-type-3");
-musicTypeThree.addEventListener("click", changeTypeThree);
+musicTypeThree.addEventListener("click", function () { changeType(2) });
 
 const audioOne = document.getElementById("a-1");
-audioOne.addEventListener("click", playNumberOne);
+audioOne.addEventListener("click", function () { playNumber(0); });
 const audioTwo = document.getElementById("a-2");
-audioTwo.addEventListener("click", playNumberTwo);
+audioTwo.addEventListener("click", function () { playNumber(1); });
 const audioThree = document.getElementById("a-3");
-audioThree.addEventListener("click", playNumberThree);
+audioThree.addEventListener("click", function () { playNumber(2); });
 const audioFour = document.getElementById("a-4");
-audioFour.addEventListener("click", playNumberFour);
+audioFour.addEventListener("click", function () { playNumber(3); });
 const audioFive = document.getElementById("a-5");
-audioFive.addEventListener("click", playNumberFive);
+audioFive.addEventListener("click", function () { playNumber(4); });
 const audioSix = document.getElementById("a-6");
-audioSix.addEventListener("click", playNumberSix);
+audioSix.addEventListener("click", function () { playNumber(5); });
 const audioSeven = document.getElementById("a-7");
-audioSeven.addEventListener("click", playNumberSeven);
+audioSeven.addEventListener("click", function () { playNumber(6); });
 const audioEight = document.getElementById("a-8");
-audioEight.addEventListener("click", playNumberEight);
+audioEight.addEventListener("click", function () { playNumber(7); });
 const audioNine = document.getElementById("a-9");
-audioNine.addEventListener("click", playNumberNine);
+audioNine.addEventListener("click", function () { playNumber(8); });
 
 import { popSounds } from './sounds/pop.js'
 import { rockSounds } from './sounds/rock.js';
@@ -60,18 +60,6 @@ function onLoadInitial() {
     musicTypeOne.classList.add("music-active");
     boardType = 0;
     switchSounds();
-}
-
-function changeTypeOne() {
-    changeType(0);
-}
-
-function changeTypeTwo() {
-    changeType(1);
-}
-
-function changeTypeThree() {
-    changeType(2);
 }
 
 function changeType(number) {
@@ -137,34 +125,6 @@ function memeBoardSoundFunction() {
         audioButton.style.color = element.textColor;
         count++;
     });
-}
-
-function playNumberOne() {
-    playNumber(0);
-}
-function playNumberTwo() {
-    playNumber(1);
-}
-function playNumberThree() {
-    playNumber(2);
-}
-function playNumberFour() {
-    playNumber(3);
-}
-function playNumberFive() {
-    playNumber(4);
-}
-function playNumberSix() {
-    playNumber(5);
-}
-function playNumberSeven() {
-    playNumber(6);
-}
-function playNumberEight() {
-    playNumber(7);
-}
-function playNumberNine() {
-    playNumber(8);
 }
 
 function playNumber(number) {
