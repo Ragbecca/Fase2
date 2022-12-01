@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="author" content="Rebecca">
+    <meta name="keywords" content="JS Objective 2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>JS Objective 2</title>
+    <link rel="stylesheet" href="../styles/common.css">
+</head>
+
+<body class="h-100">
+    <header id="flex-header">
+        <h1>JS Objective 2</h1>
+        <h3><a href="../index.html">Terug naar hoofdpagina</a></h3>
+    </header>
+    <main class="mt-1 flex-col flex-center space-middle h-85">
+        <h4>Loops/Checks (Triggered by button)</h4>
+        <div class="flex-row space-between w-100">
+            <div>
+                <p>Check if iemand is 18 of ouder</p>
+                <button onclick="ageCheck(16)">16 jaar</button>
+                <button onclick="ageCheck(18)">18 jaar</button>
+                <button onclick="ageCheck(20)">20 jaar</button>
+                <button onclick="ageCheck(101)">101 jaar</button>
+                <p id="age-check-reply">-</p>
+            </div>
+            <div>
+                <p>Loop een aantal keer</p>
+                <button onclick="timesLoop(3)">3 keer</button>
+                <button onclick="timesLoop(5)">5 keer</button>
+                <button onclick="timesLoop(10)">10 keer</button>
+                <button onclick="timesLoop(101)">101 keer</button>
+                <p id="loop-reply">-</p>
+            </div>
+        </div>
+    </main>
+    <script src="../js/ob-2.js"></script>
+</body>
+
+</html>

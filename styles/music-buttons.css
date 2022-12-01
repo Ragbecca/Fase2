@@ -1,0 +1,143 @@
+.music-selector {
+    margin: 32px 16px;
+    padding: 16px 8px;
+    width: 10rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    border-width: 0;
+    cursor: pointer;
+}
+
+#music-type-1 span {
+    background: -webkit-linear-gradient(0deg, rgba(92, 29, 107, 1) 0%, rgba(255, 166, 76, 1) 50%, rgba(56, 166, 243, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#music-type-1:hover {
+    background: -webkit-linear-gradient(0deg, rgba(92, 29, 107, 1) 0%, rgba(255, 166, 76, 1) 50%, rgba(56, 166, 243, 1) 100%);
+    background-size: 150%;
+}
+
+#music-type-1:hover span {
+    color: white;
+    -webkit-text-fill-color: unset;
+}
+
+#music-type-1.music-active {
+    background: -webkit-linear-gradient(0deg, rgba(92, 29, 107, 1) 0%, rgba(255, 166, 76, 1) 50%, rgba(56, 166, 243, 1) 100%);
+    background-size: 150%;
+}
+
+#music-type-1.music-active span {
+    color: white;
+    -webkit-text-fill-color: unset;
+}
+
+#music-type-2 span {
+    background: -webkit-linear-gradient(0deg, rgba(51, 52, 49, 1) 0%, rgba(144, 128, 134, 1) 50%, rgba(199, 193, 195, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#music-type-2:hover {
+    background: -webkit-linear-gradient(0deg, rgba(51, 52, 49, 1) 0%, rgba(144, 128, 134, 1) 50%, rgba(199, 193, 195, 1) 100%);
+    background-size: 150%;
+}
+
+#music-type-2:hover span {
+    color: white;
+    -webkit-text-fill-color: unset;
+}
+
+#music-type-2.music-active {
+    background: -webkit-linear-gradient(0deg, rgba(51, 52, 49, 1) 0%, rgba(144, 128, 134, 1) 50%, rgba(199, 193, 195, 1) 100%);
+    background-size: 150%;
+}
+
+#music-type-2.music-active span {
+    color: white;
+    -webkit-text-fill-color: unset;
+}
+
+#music-type-3 span {
+    background: -webkit-linear-gradient(0deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#music-type-3:hover {
+    background: -webkit-linear-gradient(0deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    background-size: 150%;
+}
+
+#music-type-3:hover span {
+    color: white;
+    -webkit-text-fill-color: unset;
+}
+
+#music-type-3.music-active {
+    background: -webkit-linear-gradient(0deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(47, 201, 226, 1) 50%,
+            rgba(28, 127, 238, 1) 60%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    background-size: 150%;
+}
+
+#music-type-3.music-active span {
+    color: white;
+    -webkit-text-fill-color: unset;
+}
+
+.flex-audio-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-audio-row>button {
+    border-radius: 2rem;
+    border-width: 0;
+    width: 7rem;
+    height: 7rem;
+    margin: 1rem 1rem;
+}
